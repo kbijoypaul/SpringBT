@@ -26,7 +26,7 @@ public class AuthorController {
     public Author createAuthor(@RequestBody Author author) {
         try {
             System.out.println("Creating Author: {}" + author);
-            logger.info("Creating book: {}", author);
+            logger.info("Creating author: {}", author);
             return authorRepository.save(author);
         } catch (Exception e) {
             logger.error("Error creating Author", e);
